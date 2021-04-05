@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container py-5 w-50 m-auto border shadow">
+      <label>ProductName:</label>
+      <input type="text" id="ProductNameInput" class="form-control my-2" />
+      <label>ProductPrice:</label>
+      <input type="text" id="ProductPriceInput" class="form-control my-2" />
+      <label>ProductCategory:</label>
+      <input type="text" id="ProductCategoryInput" class="form-control my-2" />
+      <label>ProductDesc:</label>
+      <textarea type="text" id="ProductDescInput" class="form-control my-2" />
+    </textarea>
+    <button id="addbtn" onclick="addProduct()" class="btn btn-info my-2">add product</button>
+    </div>
+    <div class="m-auto w-50 pt-4">
+        <input  onkeyup="search(this.value)" class="form-control" type="text" id="search" placeholder="search by product name">
+        <div class="w-100 p-4"  id="searchbox"></div>
+
+    </div>
+    <div class="container mt-5 w-75">
+        <table  id="tableBody"class="table text-center border shadow">
+            <th>productName</th>
+            <th>productPrice</th>
+            <th>productCategory</th>
+            <th> ProductDesc</th>
+        </table>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
